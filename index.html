@@ -3,64 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MitzvahMedia - Jewish Video Sharing Platform</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home - MitzvahMedia</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
-        <h1>MitzvahMedia</h1>
+        <h1>Welcome to MitzvahMedia</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Upload Video</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="upload.html">Upload Video</a></li>
+                <li><a href="delete.html">Delete Video</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Video Upload Section -->
-    <section id="upload-video">
-        <h2>Upload Your Video</h2>
-        <form id="uploadForm">
-            <input type="file" id="videoFile" accept="video/*" required>
-            <button type="submit">Upload Video</button>
-        </form>
-        <p id="uploadMessage"></p>
-    </section>
+    <main>
+        <h2>Explore the Best Jewish Videos!</h2>
+        <p>Sign up to upload your own content or manage your existing videos.</p>
+    </main>
 
-    <!-- Popular Videos Section -->
-    <section id="popular-videos">
-        <h2>Popular Videos</h2>
-        <div class="video-list" id="videoList">
-            <!-- Videos will be dynamically loaded here -->
-        </div>
-    </section>
-
-    <!-- Video Player Section -->
-    <section id="video-player">
-        <h2>Watch Video</h2>
-        <video controls width="600" id="videoPlayer">
-            <source id="videoSource" src="" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
-
-    <!-- Login Section -->
-    <section id="login">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
-        <p id="loginMessage"></p>
-    </section>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
